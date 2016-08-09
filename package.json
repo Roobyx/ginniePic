@@ -1,7 +1,7 @@
 {
-  "name": "placegoat",
+  "name": "placepig",
   "version": "2.0.0",
-  "description": "A placeholder image service, for goats.",
+  "description": "A placeholder image service, for pigs.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rosshettel/placegoat.git"
+    "url": "https://github.com/rosshettel/placepig.git"
   },
   "author": "Ross Hettel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rosshettel/placegoat/issues"
+    "url": "https://github.com/rosshettel/placepig/issues"
   },
-  "homepage": "http://placegoat.com",
+  "homepage": "http://placepig.com",
   "dependencies": {
     "express": "^4.13.3",
     "gm": "^1.18.1",

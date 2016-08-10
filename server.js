@@ -1,10 +1,10 @@
-	var express = require('express'),
-	app = express(),
-	port = process.env.PORT || 6123,
-	server = app.listen(port),
-	pigFactory = require('./pigFactory'),
-	isFinite = require('lodash.isfinite'),
-	logger = require('./logger');
+var express = require('express'),
+app = express(),
+port = process.env.PORT || 6123,
+server = app.listen(port),
+pigFactory = require('./pigFactory'),
+isFinite = require('lodash.isfinite'),
+logger = require('./logger');
 
 logger.info('Server started @ port ', port);
 

@@ -1,0 +1,90 @@
+.container {
+	color: white;
+}
+
+.background-hld {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.guinea-invasion {
+	background-image: url(/300/300);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	/*height: 150px;*/
+	display: inline-block;
+	float: left;
+	z-index: 1;
+}
+
+.examples {
+	border-radius: 5px;
+	background-color: #efefef;
+	padding: 15px 0 15px 30px;
+	min-height: 50px;
+	color: #000;
+}
+
+#testpig {
+	margin-top: 35px;
+}
+
+#first {
+	padding-top: 50px;
+}
+
+html, body {
+	height: 100%;
+	position: relative;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	position: relative;
+	background-color: rgba(0,0,0, .8);
+	z-index: 5;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -40px;
+}
+
+/* Set the fixed height of the footer here */
+#push, #footer {
+	height: 40px;
+}
+
+#footer {
+	background-color: #00796B;
+}
+
+#footer p {
+	margin: 10px 0;
+}
+
+#footer a {
+	color: white;
+	text-decoration: underline;
+}
+
+p.pigs-served {
+	font-size: 40px;
+	line-height: 40px;
+	margin: 15px 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

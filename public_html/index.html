@@ -3,157 +3,55 @@
 <head>
 	<title>GuineaPic</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
 	<!-- <script src="js/jquery.flipCounter.1.2.pack.js" type="text/javascript"></script> -->
 
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		// _gaq.push(['_setAccount', 'UA-39096722-1']);
-		// _gaq.push(['_trackPageview']);
-
-		// (function () {
-		// 	var ga = document.createElement('script');
-		// 	ga.type = 'text/javascript';
-		// 	ga.async = true;
-		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		// 	var s = document.getElementsByTagName('script')[0];
-		// 	s.parentNode.insertBefore(ga, s);
-		// })();
-
-	</script>
-
-	<style>
-		.container {
-			color: white;
-		}
-
-		body {
-			background-color: #00796B;
-		}
-
-		#testpig {
-			margin-top: 35px;
-		}
-
-		#first {
-			padding-top: 50px;
-		}
-
-		html, body {
-			height: 100%;
-		}
-
-		/* Wrapper for page content to push down footer */
-		#wrap {
-			min-height: 100%;
-			height: auto !important;
-			height: 100%;
-			/* Negative indent footer by it's height */
-			margin: 0 auto -40px;
-		}
-
-		/* Set the fixed height of the footer here */
-		#push, #footer {
-			height: 40px;
-		}
-
-		#footer {
-			background-color: #00796B;
-		}
-
-		#footer p {
-			margin: 10px 0;
-		}
-
-		#footer a {
-			color: white;
-			text-decoration: underline;
-		}
-
-		p.pigs-served {
-			font-size: 40px;
-			line-height: 40px;
-			margin: 15px 0;
-			font-weight: normal;
-			text-align: center;
-		}
-
-		/* Lastly, apply responsive CSS fixes as necessary */
-		@media (max-width: 767px) {
-			#footer {
-				margin-left: -20px;
-				margin-right: -20px;
-				padding-left: 20px;
-				padding-right: 20px;
-			}
-		}
-	</style>
 </head>
 </html>
 
 <body>
-<div id="wrap">
-	<div class="container">
-		<div class="row" id="first">
-			<div>
-				<h1>GinniePic</h1>
+	<div class="background-hld">
+		<div class="guinea-invasion"></div>
+	</div>
 
-				<div> Well simply put... im sick of Cat and Nicolas Cage placeholders... so I present ... Ginnie Pigs !!!!</div>
+	<div id='wrap' class='container'>
+		<div class='row'>
+			<div class="class='col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
-				<p><strong>You are welcome here, friend.</strong></p>
 
-				<!-- <p class="pigs-served">
-					<span id="pig_counter"></span>
-					pigs served!
-				</p> -->
+				<h1> GinniePic !</h1>
+
+				<article> Well simply put... im sick of Cat and Nicolas Cage placeholders... so I present ... Ginnie Pigs !!!! </article>
+
+				<h2>Usage:</h2>
 			</div>
-
 
 		</div>
 
-		<div class="row">
-			<div class="span7">
-				<h2>Usage:</h2>
+		<div class='row'>
+			<div class="class='col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+				<h3>
+					If you know the width and height:
+				</h3>
 
-				<p><strong>If you know the width and height:</strong></p>
-					<pre>
-https://ginniepic.herokuapp.com/200/200
-https://ginniepic.herokuapp.com/width/height
-					</pre>
+				<div class='examples'>
+					<div> https://ginniepic.herokuapp.com/200/200 </div>
+					<div> https://ginniepic.herokuapp.com/width/height </div>
+				</div>
 
-				<p><strong>If you want a square, just specify the width:</strong></p>
-					<pre>
-https://ginniepic.herokuapp.com/200
-https://ginniepic.herokuapp.com/width
-					</pre>
+				<h3>
+					If you want a square, just specify the width:
+				</h3>
 
-				<!-- <p><strong>If you're daring:</strong></p>
-					<pre>
-https://ginniepic.herokuapp.com/pigsee/200/200
-					</pre> -->
-			</div>
-			<div class="span5">
-				<img id="testpig" src="/330/380">
+				<div class='examples'>
+					https://ginniepic.herokuapp.com/200
+					https://ginniepic.herokuapp.com/width
+				</div>
 			</div>
 		</div>
 	</div>
-	<div id="push"></div>
-</div>
 
+	<script src="js/background.js" type="text/javascript"></script>
 
 </body>
-<script>
-	jQuery(document).ready(function ($) {
-		$.getJSON('count.json', function (data) {
-			setTimeout(function () {
-				$("#pig_counter").flipCounter(
-						"startAnimation", {
-							number: 1000,
-							end_number: data.count,
-							duration: 1000
-						}
-				);
-			}, 450);
-		});
-	});
-</script>
